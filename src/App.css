@@ -1,0 +1,53 @@
+:root{
+  --main-color:rgb(51, 51, 65);
+}
+.container{
+  max-width: 85%;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.py-75{
+  padding: 75px 0;
+}
+.pt-75{
+  padding-top: 75px;
+}
+.icons svg {
+  font-size: 20px;
+  margin: 0 5px;
+  color: white;
+  transition: .3s;
+}
+.icons svg:hover {
+  transform: scale(1.5);
+}
+button {
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: .3s;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.tail{
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+}

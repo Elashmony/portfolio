@@ -1,0 +1,88 @@
+.contact .holder{
+    background-color: var(--main-color);
+    margin: 75px 0;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 15px 0 var(--main-color);
+    color: white;
+}
+.contact .holder>h1,
+.contact .holder .icons{
+    padding: 0 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+}
+.contact .holder>h1 svg{
+    transform: translateY(5px);
+}
+.contact .holder >h1::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 70%;
+    width:5px;
+    background-color: white;
+    transform: translateY(9px);
+    animation: fade .4s infinite ease alternate-reverse;
+}
+.contact .parent{
+    justify-content: space-between;
+}
+.contact .holder .left{
+    width: 50%;
+}
+.contact .holder .left p{
+    letter-spacing: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.contact .left .mailz img{
+    width: 100%;
+}
+.contact .holder .left .mailz{
+    opacity: .5;
+}
+.contact .holder form{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 15px;
+    width: 48%;
+    color: rgb(144, 144, 153);
+    font-size: 20px !important;
+    font-weight: bold;
+}
+.contact .holder form input,
+.contact .holder form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius:8px ;
+    margin: 10px 0 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(246, 243, 248);
+}
+.contact .holder form button:hover{
+    color: orange;
+}
+
+@media (max-width:414px){
+    .contact .parent {
+        display: block;
+    }
+   
+    .contact .parent .left,
+    .contact .parent >form{
+        width: 100%;
+    }
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

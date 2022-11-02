@@ -1,0 +1,104 @@
+.resume .controller{
+    width: 30%;
+    box-shadow: 10px 0 4px -5px #aaa ;
+} 
+.resume .controller .icons {
+    background-color: var(--main-color);
+    width:30px;
+}
+.resume .controller .icons *{
+    display: block;
+    font-size: 21px;
+    color: white;
+    margin: 50px auto;
+}
+.resume .controller ul{
+    list-style: none;
+}
+.resume .controller ul li{
+    margin:30px 0;
+    width: 130%;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: .3s;
+}
+.resume .controller ul li.active{
+    background-color: var(--main-color);
+    color: white;
+}
+/* viewer */
+.viewer{
+    padding-left: 60px;
+    height: 405px;
+    overflow: hidden;
+    width: 70%;
+}
+.viewer >div >div{
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.viewer >div .skills{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.viewer >div .skills >div{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.viewer >div .skills .StyledList{
+    margin-bottom: 13px;
+}
+.viewer >div{
+    transition: .5s ease;
+}
+/* viewer end */
+@media (max-width:1110px){
+    .resume .controller{
+        width: 37%;
+    }
+    .resume .controller ul li {
+        width:100%;
+    }
+    .resume .viewer{
+        padding-left:14px;
+    }
+    .resume .GeneralComp:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .resume .GeneralComp *:not(p) {
+        font-size: 15px;
+    }
+    .resume .progress {
+        width: 150px;
+    }
+}
+@media (max-width:414px){
+    .resume .holder{
+        display: block;
+    }
+    .resume .controller,
+    .resume .viewer{
+        width: 100%;
+        padding: 0;
+    }
+    .resume .viewer{
+        margin-top: 30px;
+        transform: translateX(-15px);
+    }
+    .resume .GeneralComp *{
+        font-size: 14px;
+    }
+    .resume .progress{
+        width: 130px;
+    }
+    .resume .GeneralComp .date{
+        font-size: 10px;
+    }
+    
+}

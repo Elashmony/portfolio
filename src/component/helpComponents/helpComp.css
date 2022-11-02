@@ -1,0 +1,99 @@
+/* Title Component */
+.title h1,
+.title p,
+.title .shape {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title p {
+    margin: 20px 0;
+    letter-spacing: 5px;
+}
+
+.title .shape {
+    justify-content: center;
+    height: 4px;
+    width: 220px;
+    margin: auto;
+    background-color: #999;
+
+}
+
+.title .shape span {
+    width: 40px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: orange;
+}
+/* Title Component End */
+/* GeneralComp */
+.GeneralComp {
+    position: relative;
+}
+.GeneralComp:not(:last-child){
+    margin-bottom: 40px;
+}
+.GeneralComp .StyledList {
+    position: relative;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: orange;
+    font-size: 20px;
+}
+.GeneralComp .StyledList::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-43%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.GeneralComp .heading {
+    font-size: 15px;
+    margin-left: 50px;
+}
+.GeneralComp .text{
+    margin-left: 50px;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+.GeneralComp .date{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.GeneralComp .progress{
+    position: relative;
+    height: 10px;
+    width: 230px;
+    background-color: orange;
+    margin-left: 50px;
+}
+.GeneralComp .progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition:.5s ease;
+    transition-delay: .5s;
+    background-color: var(--main-color);
+}
+/* GeneralComp End */
+
+
+ 
+
+  
